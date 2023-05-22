@@ -11,12 +11,22 @@
     --cor2: #3DDB84;
     --cor3: #2FA866;
     --cor4: #288a54;
-    --cor5: #1A5C37;
-    --cor6: #355C47;
+    --cor5: #355C47;
+    --cor6: #1A5C37;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-family: 'Source Sans Pro';
+        background-color: rgb(255, 254, 211);
+        font-size: 10px;
+    }
 }
 
 body {
     font-family: 'Source Sans Pro';
+    background-color: rgb(255, 254, 211);
+    font-size: 13px;
 }
 
 .cabecalho {
@@ -27,11 +37,13 @@ body {
     background-image: linear-gradient(to bottom, var(--cor3),var(--cor3),  var(--cor4), var(--cor4), var(--cor5));
     text-align: center;
 
+    width: 100vw;
     height: 200px;
+    border: 1px solid blue;
 }
 
 .cabecalho > h1{
-    font-size: 4em;
+    font-size: 3em;
     padding: 20px 0;
 }
 
@@ -44,7 +56,7 @@ body {
 
 .menu > ul > li {
     display: inline;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .menu a {
@@ -56,11 +68,42 @@ body {
 
 .menu a:hover {
     background-color: #3DDB84;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
 }
-
 
 a:link, a:visited {
     text-decoration: none;
 }
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    box-shadow: 0 0 10px #25252597;
+    background-color: white;
+}
+
+main p {
+    text-indent: 40px;
+    line-height: 2;
+    text-align: justify;
+
+    margin: 10px 0;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor3), var(--cor2), var(--cor1), transparent);
+    padding-left: 5px;
+}
+
+main .irina-picture {
+    border: 1px solid blue;
+    margin: 0 auto;
+}
+
+main .bugdroid-img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
