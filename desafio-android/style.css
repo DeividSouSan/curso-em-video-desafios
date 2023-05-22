@@ -77,7 +77,6 @@ a:link, a:visited, a:active {
 main {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px 20px;
 
     box-shadow: 0 0 10px #25252597;
     background-color: white;
@@ -101,6 +100,9 @@ main h2 {
     padding-left: 5px;
 }
 
+main > article {
+    padding: 0 20px;
+}
 
 .bugdroid-img {
     display: block;
@@ -114,4 +116,21 @@ main h2 {
 
 .link-externo::after {
     content: "🔗";
+}
+
+.iframe-container {
+    background-color: #355C47;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção de 16:9 (dividir a altura pela largura) */
+  }
+  
+.iframe-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 95%;
 }
